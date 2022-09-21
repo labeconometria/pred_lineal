@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import sklearn 
 
 st.title('Aplicación: predicción de salario a partir de educación y experiencia')
 
