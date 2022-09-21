@@ -14,4 +14,4 @@ exper = st.slider('Experiencia', 0, 50)
 model = pickle.load(open('model.pickle','rb'))
 pred = model.predict(np.array([[educ, exper]]))
                      
-st.text(f'Su salario es de ${pred[0]} por hora')
+st.text(f'Su salario es de ${round(pred[0],2)} por hora')
