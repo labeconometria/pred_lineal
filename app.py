@@ -15,3 +15,5 @@ model = pickle.load(open('model.pickle','rb'))
 pred = model.predict(np.array([[educ, exper]]))
                      
 st.text(f'Su salario es de ${round(pred[0],2)} por hora')
+
+st.text('Esto es una actualización')
